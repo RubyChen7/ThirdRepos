@@ -37,8 +37,8 @@
             this.radGeneral = new System.Windows.Forms.RadioButton();
             this.radBox = new System.Windows.Forms.RadioButton();
             this.grpSection = new System.Windows.Forms.GroupBox();
-            this.radBckStall = new System.Windows.Forms.RadioButton();
             this.cmdCalculate = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.grpSection.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,7 +55,8 @@
             // txtQuantity
             // 
             this.txtQuantity.Location = new System.Drawing.Point(148, 59);
-            this.txtQuantity.Margin = new System.Windows.Forms.Padding(4);
+            this.txtQuantity.Location = new System.Drawing.Point(148, 59);
+            this.txtQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.Size = new System.Drawing.Size(120, 22);
             this.txtQuantity.TabIndex = 1;
@@ -83,7 +84,8 @@
             // 
             this.chkDiscount.AutoSize = true;
             this.chkDiscount.Location = new System.Drawing.Point(148, 117);
-            this.chkDiscount.Margin = new System.Windows.Forms.Padding(4);
+            this.chkDiscount.Location = new System.Drawing.Point(148, 117);
+            this.chkDiscount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkDiscount.Name = "chkDiscount";
             this.chkDiscount.Size = new System.Drawing.Size(132, 21);
             this.chkDiscount.TabIndex = 5;
@@ -94,7 +96,8 @@
             // 
             this.radBalcony.AutoSize = true;
             this.radBalcony.Location = new System.Drawing.Point(35, 21);
-            this.radBalcony.Margin = new System.Windows.Forms.Padding(4);
+            this.radBalcony.Location = new System.Drawing.Point(35, 21);
+            this.radBalcony.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radBalcony.Name = "radBalcony";
             this.radBalcony.Size = new System.Drawing.Size(79, 21);
             this.radBalcony.TabIndex = 6;
@@ -106,7 +109,8 @@
             this.radGeneral.AutoSize = true;
             this.radGeneral.Checked = true;
             this.radGeneral.Location = new System.Drawing.Point(35, 49);
-            this.radGeneral.Margin = new System.Windows.Forms.Padding(4);
+            this.radGeneral.Location = new System.Drawing.Point(35, 49);
+            this.radGeneral.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radGeneral.Name = "radGeneral";
             this.radGeneral.Size = new System.Drawing.Size(80, 21);
             this.radGeneral.TabIndex = 7;
@@ -118,7 +122,8 @@
             // 
             this.radBox.AutoSize = true;
             this.radBox.Location = new System.Drawing.Point(35, 78);
-            this.radBox.Margin = new System.Windows.Forms.Padding(4);
+            this.radBox.Location = new System.Drawing.Point(35, 78);
+            this.radBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radBox.Name = "radBox";
             this.radBox.Size = new System.Drawing.Size(92, 21);
             this.radBox.TabIndex = 8;
@@ -127,35 +132,24 @@
             // 
             // grpSection
             // 
-            this.grpSection.Controls.Add(this.radBckStall);
             this.grpSection.Controls.Add(this.radBox);
             this.grpSection.Controls.Add(this.radGeneral);
             this.grpSection.Controls.Add(this.radBalcony);
             this.grpSection.Location = new System.Drawing.Point(69, 174);
-            this.grpSection.Margin = new System.Windows.Forms.Padding(4);
+            this.grpSection.Location = new System.Drawing.Point(69, 174);
+            this.grpSection.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grpSection.Name = "grpSection";
-            this.grpSection.Padding = new System.Windows.Forms.Padding(4);
-            this.grpSection.Size = new System.Drawing.Size(185, 199);
+            this.grpSection.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpSection.Size = new System.Drawing.Size(185, 137);
             this.grpSection.TabIndex = 9;
             this.grpSection.TabStop = false;
             this.grpSection.Text = "Section";
             // 
-            // radBckStall
-            // 
-            this.radBckStall.AutoSize = true;
-            this.radBckStall.Location = new System.Drawing.Point(35, 126);
-            this.radBckStall.Margin = new System.Windows.Forms.Padding(4);
-            this.radBckStall.Name = "radBckStall";
-            this.radBckStall.Size = new System.Drawing.Size(88, 21);
-            this.radBckStall.TabIndex = 9;
-            this.radBckStall.Text = "back stall";
-            this.radBckStall.UseVisualStyleBackColor = true;
-            this.radBckStall.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
             // cmdCalculate
             // 
             this.cmdCalculate.Location = new System.Drawing.Point(392, 330);
-            this.cmdCalculate.Margin = new System.Windows.Forms.Padding(4);
+            this.cmdCalculate.Location = new System.Drawing.Point(392, 330);
+            this.cmdCalculate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmdCalculate.Name = "cmdCalculate";
             this.cmdCalculate.Size = new System.Drawing.Size(144, 43);
             this.cmdCalculate.TabIndex = 10;
@@ -163,11 +157,25 @@
             this.cmdCalculate.UseVisualStyleBackColor = true;
             this.cmdCalculate.Click += new System.EventHandler(this.cmdCalculate_Click);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(317, 117);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(61, 21);
+            this.checkBox1.TabIndex = 11;
+            this.checkBox1.Text = "Child";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // TicketsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(811, 548);
+            this.ClientSize = new System.Drawing.Size(811, 548);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.cmdCalculate);
             this.Controls.Add(this.grpSection);
             this.Controls.Add(this.chkDiscount);
@@ -175,7 +183,7 @@
             this.Controls.Add(this.lblAmountDue);
             this.Controls.Add(this.txtQuantity);
             this.Controls.Add(this.lblQuantity);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TicketsForm";
             this.Text = "Theater Ticket Purchase";
             this.Load += new System.EventHandler(this.TicketsForm_Load);
@@ -198,7 +206,7 @@
         private System.Windows.Forms.RadioButton radBox;
         private System.Windows.Forms.GroupBox grpSection;
         private System.Windows.Forms.Button cmdCalculate;
-        private System.Windows.Forms.RadioButton radBckStall;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
